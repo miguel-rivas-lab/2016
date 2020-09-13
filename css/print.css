@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "BPreplay";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/bpreplayextendedbold-webfont.eot");
+  src: url("../fonts/bpreplayextendedbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpreplayextendedbold-webfont.woff") format("woff"), url("../fonts/bpreplayextendedbold-webfont.ttf") format("truetype"), url("../fonts/bpreplayextendedbold-webfont.svg#bpreplaybold") format("svg");
+}
+
+@-webkit-keyframes flyingCloud
+{
+  from
+{
+    left: -690px;
+  }
+  to
+{
+    left: 300%;
+  }
+}
+
+@keyframes flyingCloud
+{
+  from
+{
+    left: -690px;
+  }
+  to
+{
+    left: 300%;
+  }
+}
+
+@-webkit-keyframes shake
+{
+  25% {
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+}
+
+@keyframes shake
+{
+  25% {
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+}
+
+@-webkit-keyframes enphasis
+{
+  from
+{
+    bottom: 70px;
+    opacity: .6;
+  }
+  top {
+    bottom: 50px;
+  }
+}
+
+@keyframes enphasis
+{
+  from
+{
+    bottom: 70px;
+    opacity: .6;
+  }
+  top {
+    bottom: 50px;
+  }
+}
+
+header,
+section.projects,
+section.ground,
+section.references,
+footer,
+aside.modal,
+aside.texture,
+nav {
+  display: none;
+}
+
+section.letter .container {
+  margin-top: 150px;
+  font-size: 10pt;
+  max-width: 500px;
+}
+
+section.letter .container:before,
+section.letter .container:after {
+  display: none;
+}
+
+section.letter .container small {
+  display: inline;
+}
+
+section.letter .container strong, section.letter .container small {
+  color: inherit;
+  font-style: normal;
+  font-size: inherit;
+  font-family: "Montserrat", helvetica, sans-serif, verdana;
+  float: none;
+  text-transform: inherit;
+  line-height: 1;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+section.letter .container em {
+  color: #00a99d;
+}
+
+section.letter .container h2 {
+  font-family: "Montserrat", helvetica, sans-serif, verdana;
+  font-size: 10pt;
+  color: #000;
+  font-weight: normal;
+}
+
+section.letter .container p:first-child {
+  font-family: "BPreplay", helvetica, sans-serif, verdana;
+  font-size: 38pt;
+  font-weight: bold;
+  line-height: 1;
+  margin: 15px 18px 0px 0px;
+  text-transform: uppercase;
+  color: #00a99d;
+  display: block !important;
+}
+
+section.printBody {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+section.printBody .borderLine {
+  border: 2px dashed #27aae1;
+  width: 94%;
+  height: 96%;
+  position: absolute;
+  z-index: 5;
+  top: 2%;
+  left: 3%;
+}
+
+section.printBody .head {
+  margin: 70px auto;
+  display: inline-block;
+  width: 240px;
+  position: relative;
+  z-index: 5;
+}
+
+section.printBody .city {
+  width: 120%;
+  position: absolute;
+  bottom: -120px;
+  left: -10%;
+  z-index: 2;
+}
+
+section.printBody .qrCode {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 100px;
+  z-index: 3;
+}
+
+section.printBody .character {
+  position: absolute;
+  bottom: 100px;
+  right: 30%;
+  width: 300px;
+  z-index: 1;
+}
+
+section.printBody .cloudMiddle {
+  position: absolute;
+  width: 400px;
+  top: 400px;
+  left: 0;
+  z-index: 0;
+}
+
+section.printBody .cloudTop {
+  position: absolute;
+  width: 500px;
+  top: 0px;
+  right: 0;
+  z-index: 0;
+}
+
+@page {
+  size: auto;
+  margin: 5mm;
+}
