@@ -61,7 +61,7 @@
           <p>Usually, I work with PUG (HTML), SASS (CSS), and the Adobe Suite (Illustrator, Photoshop, Indesign, Flash and Premiere). I also love Git and have been known to roll up my sleeves and work with basic Ruby on Rails and PHP to push the project forward.</p>
         </div>
       </section>
-      <section id="projects" class="projects"><a href="https://www.drlogic.com/" target="_blank"><img src="img//portfolio/drlogic.jpg"></a><a href="../project/mineros/" target="_blank"><img src="img//portfolio/apap.jpg"></a><a href="http://presidente.com.do/carnaval/2015/home.php" target="_blank"><img src="img//portfolio/ptf-loader.jpg"></a><a href="https://www.bprbank.com/" target="_blank"><img src="img//portfolio/bprbank.jpg"></a><a href="https://player.vimeo.com/video/210372722" data-autoplay="true" data-vbtype="vimeo" class="venobox"><img src="img//portfolio/videos.jpg"></a><img src="img/cloud.png" class="cloud c03">
+      <section id="projects" class="projects"><a href="https://www.drlogic.com/" target="_blank"><img src="img/portfolio/drlogic.jpg"></a><a href="../project/mineros/" target="_blank"><img src="img/portfolio/apap.jpg"></a><a href="http://presidente.com.do/carnaval/2015/home.php" target="_blank"><img src="img/portfolio/ptf-loader.jpg"></a><a href="https://www.bprbank.com/" target="_blank"><img src="img/portfolio/bprbank.jpg"></a><a href="https://player.vimeo.com/video/210372722" data-autoplay="true" data-vbtype="vimeo" class="venobox"><img src="img/portfolio/videos.jpg"></a><img src="img/cloud.png" class="cloud c03">
         <div class="city">
           <div class="giant"></div>
           <div class="mountains"></div>
