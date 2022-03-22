@@ -1,12 +1,14 @@
+import ScrollArea from '../components/scroll-area';
+
 function HomeWorkarea() {
   return (
-    <>
+    <ScrollArea horizontal={false}>
       <header>
         <h1>
           Hello<strong></strong>
         </h1>
-        <img src="img/cloud.png" className="cloud c01" />
-        <img src="img/cloud.png" className="cloud c02" />
+        <img src="/img/cloud.png" className="cloud c01" />
+        <img src="/img/cloud.png" className="cloud c02" />
         <a href="#aboutme" className="fa fa-arrow-down" />
       </header>
       <section id="aboutme" className="letter">
@@ -18,7 +20,7 @@ function HomeWorkarea() {
         </div>
       </section>
       <section id="projects" className="projects">
-        <a target="_blank"><img src="img/portfolio/drlogic.jpg" /></a>
+        <a target="_blank"><img src="/img/portfolio/drlogic.jpg" /></a>
         <a target="_blank"><img src="img/portfolio/apap.jpg" /></a>
         <a target="_blank"><img src="img/portfolio/ptf-loader.jpg" /></a>
         <a target="_blank"><img src="img/portfolio/bprbank.jpg" /></a>
@@ -69,7 +71,7 @@ function HomeWorkarea() {
           <a href="../portfolio/" target="_blank" alt="Portfolio" className="fa fa-globe"></a>
         </div>
       </footer>
-    </>
+    </ScrollArea>
   );
 };
 

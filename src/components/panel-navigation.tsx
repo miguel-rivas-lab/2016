@@ -53,7 +53,7 @@ function PanelNavigation(): ReactElement {
     <Column size="50" addClass="main-panel">
       <div className="container">
         <Row vertical={true}>
-          <Column>
+          <Column size="100%">
             <Navigation />
             <Btn
               onClick={() => {

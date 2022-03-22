@@ -26,7 +26,7 @@ function App() {
       <main className={appClasses}>
         <Row addClass="nano-app">
           <PanelNavigation />
-          <Column size="350" addClass={classNames("panel", "router-area", { 'hide-panel': !panelVisibility })}>
+          <Column size={panelVisibility ? "300" : "0"} addClass={classNames("panel", "router-area", { 'hide-panel': !panelVisibility })}>
             <Switch>
               <Route exact path="/">
                 <HomePanel />

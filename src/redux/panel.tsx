@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const panelVisibilitySlice = createSlice({
   name: "panelVisibility",
   initialState: {
-    panelVisibility: true,
+    panelVisibility: false,
   },
   reducers: {
     togglePanelVisibility: (state) => {
