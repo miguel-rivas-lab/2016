@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode } from "react";
-import { validateSize } from "nano-grid/modules/columns-manager";
+import { validateSize } from "nano-grid/modules/columns-manager.js";
 import classNames from 'classnames';
 import { modalityType } from "../types/modality"
 

@@ -1,58 +1,29 @@
-@keyframes rtr
+@keyframes flyingCloud
 {
 	from
 	{
-		-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-				transform: rotate(0deg);
+		left: -690px;
 	}
 	to
 	{
-		-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-				transform: rotate(360deg);
+		left: 300%;
 	}
 }
 
-@keyframes rtl
+@keyframes shake
+{
+	25% { transform: rotateZ(-1deg); }
+	50% { transform: rotateZ(1deg); }
+	100% { transform: rotateZ(0); }
+}
+
+@keyframes enphasis
 {
 	from
 	{
-		-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-				transform: rotate(360deg);
+		bottom: 70px;
+		opacity: .6;
 	}
-	to
-	{
-		-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-				transform: rotate(0deg);
-	}
-}
 
-@keyframes sky
-{
-	from
-	{
-		background-position: 0 0;
-	}  to
-	{
-		background-position: 800px 0;
-	}
-}
-
-.rtl,
-.rtr
-{
-		transform: rotate(360deg);
-}
-
-.rtl
-{
-			animation: rtl linear 9s infinite;
-}
-
-.rtr
-{
-			animation: rtr linear 9s infinite;
+	to { bottom: 50px; }
 }

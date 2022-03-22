@@ -14,7 +14,7 @@ aside#modal {
 		    height: 43px;
 		    bottom: 12px;
 		    left: -3px;
-		    background: url(../img/friendly.png) center no-repeat;
+		    background: url("img/friendly.png") center no-repeat;
 		    position: absolute;
 		}
 	}
@@ -110,7 +110,7 @@ aside#modal {
 		.modal-preview-wide {
 			display: block;
 			margin: 12px auto;
-			transition: transform $transition ease;
+			transition: transform 200ms ease;
 			box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.52);
 		}
 
@@ -151,7 +151,7 @@ aside#modal {
 			color: #39b54a;
 			font-size: 20pt;
 			margin: 0 0 12px;
-			border-bottom: 2px solid $green;
+			border-bottom: 2px solid green;
 			padding-bottom: 14px;
 			letter-spacing: 1pt;
 

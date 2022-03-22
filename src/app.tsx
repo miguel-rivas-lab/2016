@@ -13,13 +13,12 @@ function App() {
   const { panelVisibility } = useSelector((state: any) => state.panelVisibility);
   const { theme } = useSelector((state: any) => state.theme);
   const appClasses = classNames("react-theme", "section-home", {
-    "nano-dark": !theme,
-    "nano-light": theme,
+    "earthquake": theme,
   });
 
   let base = "/";
-  if(process.env.NODE_ENV === 'production'){
-    base = "/2021-react/";
+  if (process.env.NODE_ENV === 'production') {
+    base = "/2016/";
   }
 
   return (
@@ -35,6 +34,7 @@ function App() {
             </Switch>
           </Column>
           <Column size={panelVisibility ? '100%-350' : '100%-50'} addClass="workarea">
+            <aside className="texture" />
             <Switch>
               <Route exact path="/">
                 <HomeWorkarea />

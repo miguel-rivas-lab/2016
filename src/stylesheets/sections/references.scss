@@ -1,5 +1,5 @@
 section.references {
-	background: #c1272d url("../img/landing_pattern.jpg") repeat;
+	background: #c1272d url("img/landing_pattern.jpg") repeat;
 	padding: 20px 0 320px;
 	text-align: center;
 	position: relative;
@@ -21,7 +21,6 @@ section.references {
 
 	.title {
 		font-size: 23pt;
-		font-family: $f_bpreplay;
 		letter-spacing: 1pt;
 	}
 
@@ -31,7 +30,7 @@ section.references {
 
 	.mail {
 		font-size: 10pt;
-		color: $orange;
+		color: orange;
 		font-weight: bold;
 	}
 
