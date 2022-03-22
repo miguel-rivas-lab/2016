@@ -1,16 +1,8 @@
 $layers: (
-  //----Bottom
-  'main.clock .bk-ornament',
-  'main.underwater .bk-ornament',
-  'main.dragon .bk-ornament',
-  'main.dragon-night .bk-ornament',
-  'main.night .bk-ornament',
-  'main.sunset .bk-ornament',
-  '.clouds',
-  '.mountains',
-  '.city',
-
-  '.workarea > section',
+  //----Bottom  
+  '.workarea',
+  'aside.texture',
+  '.main-panel'
   //----Front
 );
 

@@ -23,6 +23,7 @@ function App() {
 
   return (
     <Router basename={base}>
+      <aside className="texture" />
       <main className={appClasses}>
         <Row addClass="nano-app">
           <PanelNavigation />
@@ -34,7 +35,6 @@ function App() {
             </Switch>
           </Column>
           <Column size={panelVisibility ? '100%-350' : '100%-50'} addClass="workarea">
-            <aside className="texture" />
             <Switch>
               <Route exact path="/">
                 <HomeWorkarea />
