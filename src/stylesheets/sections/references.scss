@@ -11,29 +11,6 @@ section.references {
 		max-width: 100%;
 	}
 
-	h2 {
-		color: #fff;
-
-		strong {
-			color: #000;
-		}
-	}
-
-	.title {
-		font-size: 23pt;
-		letter-spacing: 1pt;
-	}
-
-	.subtitle {
-		font-size: 10pt;
-	}
-
-	.mail {
-		font-size: 10pt;
-		color: orange;
-		font-weight: bold;
-	}
-
 	.content {
 		margin-top: 360px;
 		position: relative;
@@ -41,11 +18,10 @@ section.references {
 
 	article {
 		display: inline-block;
-		margin: 20px auto;
+		margin: 3rem;
 
-		p, a {
-			margin: 0;
-			line-height: 1;
+		h3, p {
+			text-transform: uppercase;
 		}
 	}
 

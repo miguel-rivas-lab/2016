@@ -8,7 +8,6 @@ function HomePanel() {
     <ScrollArea color="royal-purple">
       <fieldset className="nano-row row-block horizontal">
         <Column size="100%">
-          <legend>Animation Controllers</legend>
         </Column>
       </fieldset>
     </ScrollArea>

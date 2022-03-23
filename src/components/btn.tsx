@@ -19,7 +19,7 @@ type BtnProps = {
 }
 
 function Btn({ children, addClass, value, color, size, icon, onClick, href, to, tag, active }: BtnProps): ReactElement {
-  const computedClasses = classNames("flat", "btn", "icon", size, addClass, color, { active: active });
+  const computedClasses = classNames("transparent", "btn", "icon", size, addClass, color, { active: active });
   if (tag === "button") {
     return (
       <button onClick={onClick} className={computedClasses}>
@@ -49,7 +49,7 @@ function Btn({ children, addClass, value, color, size, icon, onClick, href, to, 
 }
 
 Btn.defaultProps = {
-  color: "transparent",
+  color: "mariner",
   size: "md",
   tag: "button",
   active: false,

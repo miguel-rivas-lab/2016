@@ -4,7 +4,6 @@
 
 	.container {
 		max-width: 512px;
-		margin: 30px auto;
 		padding: 20px;
 		position: relative;
 		z-index: 5;
@@ -41,23 +40,6 @@
 			line-height: 1;
 			margin-right: 7px;
 			margin-bottom: -1px;
-		}
-
-		&:before, &:after {
-			color: rgba(67, 126, 190, 0.13);
-			font-size: 261pt;
-			position: absolute;
-			top: -104px;
-			transition: all 500ms ease;
-		}
-		&:before {
-			content: "[";
-			left: -125px;
-		}
-
-		&:after {
-			content: "]";
-			right: -125px;
 		}
 	}
 }

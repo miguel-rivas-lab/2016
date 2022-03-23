@@ -3,51 +3,9 @@ section.projects {
 	color: cyan;
 	background: #fff url("/img/landing_cloud_middle.png") bottom left no-repeat;
 	background-size: contain;
-	padding-top: 620px;
+	padding-top: 820px;
 	min-height: 740px;
 	position: relative;
-
-	@media (max-width: 800px) {
-		padding-top: 0;
-	}
-
-	@media (max-width: 500px) {
-		padding-top: 0;
-		padding-bottom: 120px;
-	}
-
-	button, a {
-		text-align: left;
-		vertical-align: top;
-		display: inline-block;
-		border: none;
-		background-color: transparent;
-		box-sizing: border-box;
-		padding: 0;
-		transform: rotateZ(0deg);
-		transition: all 200ms ease;
-		margin: 10px 20px 30px;
-		cursor: pointer;
-		position: relative;
-		z-index: 2;
-
-		@media (max-width: 500px) {
-			margin: 10px 10px 30px;
-			width: 200px;
-		}
-
-		&:hover {
-			transform: rotateZ(5deg);
-		}
-
-		&:focus, &:active {
-			outline: none;
-		}
-
-		img {
-			height: 150px;
-		}
-	}
 
 	.city {
 		width: 100%;

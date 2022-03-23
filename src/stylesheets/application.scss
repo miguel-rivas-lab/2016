@@ -1,23 +1,18 @@
-// ------------------ Fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
 
 // ------------------ Modules
 @import "nano-grid/scss/nano-grid";
 @import "nano-grid/scss/btn";
 @import "nano-grid/scss/scroll-area";
 
-@import 'general/mixings';
 @import 'general/keyframes';
-// @import "general/icomoon";
+@import "general/icomoon";
 @import "general/layers";
 @import "general/fonts";
 @import "general/theme";
 
-@import 'components/gallery';
 @import 'components/container';
 @import 'components/nano-app';
-@import 'components/nano-box';
-@import 'components/listing';
 
 @import 'sections/main';
 @import 'sections/header';
@@ -35,11 +30,15 @@
 
 html,
 body {
-  font-family: "Montserrat", Helvetica, Arial, Tahoma, sans-serif;
+  font-family: "Nunito", Helvetica, Arial, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #222;
   overflow: hidden;
+}
+
+.scroll-area {
+  scroll-behavior: smooth;
 }
 
 main {
@@ -66,27 +65,6 @@ main {
   color: var(--color-foreground);
 }
 
-.close-btn {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: 0;
-  opacity: 0.8;
-  color: inherit;
-  &:hover {
-    cursor: pointer;
-    opacity: 1;
-  }
-
-  &.fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 35px;
-    width: 35px;
-  }
-}
-
 /*------------------------*/
 
 .btn.flat {
@@ -99,7 +77,7 @@ main {
   }
 }
 
-/* ------- random*/
+/*------------------------*/
 
 hr {
   border-color: var(--color-border);

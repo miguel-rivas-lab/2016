@@ -5,7 +5,7 @@ type IconProps = {
 }
 
 function Icon({ glyph }: IconProps): ReactElement {
-  const computedIcon = glyph ? `mdi mdi-${glyph}` : undefined;
+  const computedIcon = glyph ? `icon ${glyph}` : undefined;
   return (
     <span className={computedIcon} />
   );

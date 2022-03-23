@@ -1,4 +1,3 @@
-import React from 'react';
 import Row from './components/row';
 import Column from './components/column';
 import PanelNavigation from './components/panel-navigation';

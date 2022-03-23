@@ -1,36 +1,13 @@
-h1 {
-  font-weight: 600;
-  font-size: 25px;
-  color: var(--color-title);
-}
-
-h2 {
-  color: #d17e5e;
-  font-weight: 600;
-  font-size: 25px;
-}
-
 h3 {
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 400;
-  letter-spacing: 3px;
-}
-
-h4 {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-
-h5 {
-  font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
 p,
 li {
-  font-size: 16px;
+  line-height: 1.5;
 }
 
 h1,
@@ -38,9 +15,87 @@ h2,
 h3,
 h4,
 h5,
+h6 {
+  line-height: 1;
+}
+
+h1,
+h2,
+h4,
+h5,
 h6,
 p,
 li {
   margin: 0 0 0.5rem;
-  line-height: 1;
+}
+
+h1 {
+  margin: 0;
+  color: #000;
+  font-size: 197px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 180px;
+
+  @media (max-width: 500px) {
+    font-size: 72pt;
+  }
+
+  strong {
+    font-size: 29pt;
+    display: block;
+    text-transform: uppercase;
+
+    @media (max-width: 500px) {
+      font-size: 18pt;
+    }
+  }
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px rgb(0 0 0 / 32%);
+  text-transform: uppercase;
+}
+
+.ribbon-text {
+  display: block;
+  margin: auto;
+  position: relative;
+  margin: 0 auto 0.5rem;
+  width: 185px;
+  
+  .caption {
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 4px 7px;
+    background-color: #fbb03b;
+    color: #000;
+    z-index: 2;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    background-color: #f7931e;
+    width: 20px;
+    height: 30px;
+    margin: 0 10px 8px;
+    position: absolute;
+    top: 2px;
+    z-index: 1;
+  }
+
+  &:before {
+    right: 0;
+  }
+  &:after {
+    left: 0;
+  }
 }

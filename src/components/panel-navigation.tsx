@@ -5,7 +5,7 @@ import Btn from './btn';
 import { useDispatch, useSelector } from 'react-redux';
 import classNames from "classnames";
 import { toggleTheme } from '../redux/theme';
-import { togglePanelVisibility } from "../redux/panel";
+import ScrollArea from '../components/scroll-area';
 
 function playSound() {
   let context = new AudioContext();
@@ -21,20 +21,19 @@ function playSound() {
   );
 };
 
-function Navigation(props): ReactElement {
-  const dispatch = useDispatch();
+function Navigation(): ReactElement {
   const navigationRoutes = [
-    { icon: "monster", name: "home", polygons: [{ scale: 1, },], },
+    { icon: "person", href: "#aboutme" },
+    { icon: "duck", href: "#projects" },
+    { icon: "person", href: "#references" },
   ];
   const result = [];
   navigationRoutes.forEach((item, index) => {
     result.push(
       <Btn
+        tag="a"
+        href={item.href}
         key={`nav-${index}`}
-        onClick={() => {
-          dispatch(togglePanelVisibility());
-          playSound();
-        }}
         icon={item.icon}
       />
     );
@@ -51,22 +50,25 @@ function PanelNavigation(): ReactElement {
 
   return (
     <Column size="50" addClass="main-panel">
-      <div className="container">
-        <Row vertical={true}>
-          <Column size="100%">
-            <Navigation />
-            <Btn
-              onClick={() => {
-                dispatch(toggleTheme());
-                playSound();
-              }}
-              icon="brightness-4"
-              color="charcoal"
-              addClass={themeBtnClasses}
-            />
-          </Column>
-        </Row>
-      </div>
+      <ScrollArea horizontal={false}>
+        <div className="container">
+          <Row vertical={true}>
+            <Column size="100%">
+              <Navigation />
+              <hr />
+              <Btn
+                onClick={() => {
+                  dispatch(toggleTheme());
+                  playSound();
+                }}
+                icon="monster"
+                color="mariner"
+                addClass={themeBtnClasses}
+              />
+            </Column>
+          </Row>
+        </div>
+      </ScrollArea>
     </Column>
   );
 }

@@ -16,14 +16,3 @@
 	50% { transform: rotateZ(1deg); }
 	100% { transform: rotateZ(0); }
 }
-
-@keyframes enphasis
-{
-	from
-	{
-		bottom: 70px;
-		opacity: .6;
-	}
-
-	to { bottom: 50px; }
-}
