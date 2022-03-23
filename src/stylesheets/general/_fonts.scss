@@ -31,15 +31,17 @@ li {
 
 h1 {
   margin: 0;
-  color: #000;
+  color: #0d132a;
   font-size: 197px;
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 180px;
+  top: 30vh;
+  letter-spacing: -12px;
 
   @media (max-width: 500px) {
     font-size: 72pt;
+    letter-spacing: -5px;
   }
 
   strong {
