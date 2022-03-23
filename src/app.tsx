@@ -17,7 +17,7 @@ function App() {
 
   let base = "/";
   if (process.env.NODE_ENV === 'production') {
-    base = "/2016/";
+    base = "/2016-s/";
   }
 
   return (
