@@ -1645,11 +1645,11 @@ const projects = [
       tool.axios,
     ],
     links: [
-      {
-        url: linkWeb("2021-vue"),
-        text: "App",
-        self: false,
-      },
+      // {
+      //   url: linkWeb("2021-vue"),
+      //   text: "App",
+      //   self: false,
+      // },
       {
         url: linkGithub("2021-vue"),
         text: "Github",
